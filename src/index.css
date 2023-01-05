@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-primary bg-[#0a192f]
+    }
+
+    .container-sm {
+        @apply px-[15px]
+    }
+
+    .container-lg {
+        @apply px-[150px]
+    }
+
+    .icons {
+       @apply hover:text-blue-300 text-lg lg:text-xl
+    }
+    
+    .links {
+        @apply hover:text-blue-300 text-[#8892b0]
+    }
+
+    .link{
+        @apply w-full text-center py-6 text-[#8892b0] capitalize hover:opacity-90
+    }
+
+    .paragraph {
+        @apply text-lg text-[#ccd6f6] leading-relaxed mt-1
+    }
+
+    .form {
+        @apply outline-none px-2 py-3 rounded-sm bg-gray-300 w-[450px] resize-none
+    }
+
+    .form-sm {
+        @apply outline-none px-2 py-3 rounded-sm bg-gray-300 w-[300px] resize-none
+    }
+
+    .h2 {
+        @apply capitalize text-2xl text-[#8892b0]
+    }
+
+    /* .h2::after {
+        @apply after: h-[1px] after: bg-gray-500 after: ml-[10px] after: nline-block after: relative after: align-middle after: w-[150px] after: lg: w-[200px]
+    } */
+}
+
+/* w-full text-center py-6 text-[#8892b0] capitalize hover: opacity-90 w-full text-center py-6 text-[#8892b0] capitalize hover: opacity-90 w-full text-center py-6 text-[#8892b0] capitalize hover: opacity-90 w-full text-center py-6 text-[#8892b0] capitalize hover: opacity-90 w-full text-center py-6 text-[#8892b0] capitalize hover: opacity-90 */
