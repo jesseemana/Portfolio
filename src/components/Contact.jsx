@@ -1,3 +1,4 @@
+import { defineConfig, loadEnv } from "vite";
 import { useState, useRef, useEffect } from "react";
 import { BiSend, BiError, BiCheck } from "react-icons/bi";
 import { ImSpinner7 } from "react-icons/im";
@@ -9,7 +10,8 @@ const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const SERVICE_KEY = process.env.SERVICE_KEY;
 const TEMPLATE_ID = process.env.TEMPLATE_ID;
 
-export const Contact = () => {
+
+export const Contact = ({mode}) => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,6 +21,9 @@ export const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [canSend, setCanSend] = useState(false);
   const [validEmail, setValidEmail] = useState(false);
+  
+
+  
 
   // VARIABLE FOR ENABLING OR DISABLING THE SUBMIT BUTTON
   const activateBtn = [validEmail, name, subject, message.length >= 30].every(
@@ -33,7 +38,7 @@ export const Contact = () => {
     }
   }, [activateBtn]);
 
-  // SETTING STATE FOR TYPING AND EMAIL FOR VALIDATION 
+  // SETTING STATE FOR TYPING AND EMAIL FOR VALIDATION
   const handleMail = (e) => {
     setEmail(e.target.value);
     setTyping(true);
@@ -58,7 +63,6 @@ export const Contact = () => {
 
     validateEmail(email);
   }, [email]);
-
 
   // FUNCTION HANDLING THE EMAIL SENDING FUNCTIONALITIES
   const sendEmail = (e) => {
@@ -90,7 +94,8 @@ export const Contact = () => {
     <div className="py-5">
       <h2 className="h2 text-center">Get in touch</h2>
       <h2 className="text-md lg:text-[19px] text-gray-400  text-center py-5">
-        Have a project that needs to get done or wanna get my resume? Reach out to me below.
+        Have a project that needs to get done or wanna get my resume? Reach out
+        to me below.
       </h2>
       <form
         ref={form}
