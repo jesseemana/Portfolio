@@ -5,13 +5,9 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// keys for the emailjs API, .env is not working for some reason when scalfolding using vite
-// so i just made an object with all the keys (git ignored it) and imported it here
-import { keys } from "../../keys";
-
-const PUBLIC_KEY = keys.PUBLIC_KEY;
-const SERVICE_KEY = keys.SERVICE_KEY;
-const TEMPLATE_ID = keys.TEMPLATE_ID;
+const PUBLIC_KEY = process.env.PUBLIC_KEY;
+const SERVICE_KEY = process.env.SERVICE_KEY;
+const TEMPLATE_ID = process.env.TEMPLATE_ID;
 
 export const Contact = () => {
   const form = useRef();
