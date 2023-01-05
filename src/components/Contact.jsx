@@ -1,4 +1,3 @@
-// import { defineConfig, loadEnv } from "vite";
 import { useState, useRef, useEffect } from "react";
 import { BiSend, BiError, BiCheck } from "react-icons/bi";
 import { ImSpinner7 } from "react-icons/im";
