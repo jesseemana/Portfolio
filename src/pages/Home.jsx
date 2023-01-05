@@ -7,7 +7,7 @@ import { Services } from "../components/Services";
 
 export const Home = () => {
   useEffect(() => {
-    document.title = "Jesse | Portfolio";
+    document.title = "Home";
   });
 
   return (

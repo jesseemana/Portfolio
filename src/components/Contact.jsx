@@ -89,7 +89,7 @@ export const Contact = () => {
     <div className="py-5">
       <h2 className="h2 text-center">Get in touch</h2>
       <h2 className="text-md lg:text-[19px] text-gray-400  text-center py-5">
-        Have a project that needs to get done or wanT to get my resume? Reach
+        Have a project that needs to get done or want to get my resume? Reach
         out to me below.
       </h2>
       <form

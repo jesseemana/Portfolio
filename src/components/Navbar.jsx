@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
-// 
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="py-5 sticky absolute z-[10] bg-[#0a192f] shadow-lg top-0 max-w-full px-[8%] flex-wrap w-full border border-b-slate-600 border-l-0 border-t-0 border-r-0 shadow-[#0a192f]">
+    <header className="py-5 sticky z-[10] bg-[#0a192f] shadow-lg top-0 max-w-full px-[8%] flex-wrap w-full border border-b-slate-600 border-l-0 border-t-0 border-r-0 shadow-[#0a192f]">
       <div className="flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold text-gray-300 uppercase">
           jesse

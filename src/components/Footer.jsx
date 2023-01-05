@@ -11,7 +11,7 @@ export const Footer = () => {
 
   return (
     <footer className="text-gray-500 ">
-      <div className="flex flex-col gap-y-2 text-center py-2">
+      <div className="flex flex-col gap-y-2 text-sm md:text-[17px] text-center py-2">
         <p>Copyright &copy; all rights reserverd, {year}.</p>
 
         <div className="flex gap-x-5 justify-center">

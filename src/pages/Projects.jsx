@@ -21,7 +21,7 @@ export const Projects = () => {
           alt="page still under maintenance svg"
           className="h-[300px] md:h-[500px] text-gray-500"
         />
-        <h2 className="text-[20px] md:text-2xl text-center uppercase text-gray-500">
+        <h2 className="text-[15px] md:text-2xl text-center uppercase text-gray-500">
           page under maintenance
         </h2>
       </div>

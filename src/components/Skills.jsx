@@ -1,4 +1,3 @@
-import React from "react";
 import { logos } from "../logos";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
