@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsTwitter, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 
 export const Footer = () => {
