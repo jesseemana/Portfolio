@@ -5,9 +5,9 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY || process.env.PUBLIC_KEY;
-const SERVICE_KEY = import.meta.env.VITE_SERVICE_KEY || process.env.SERIVCE_KEY;
-const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID || process.env.TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY;
+const SERVICE_KEY = import.meta.env.VITE_SERVICE_KEY || process.env.VITE_SERIVCE_KEY;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID || process.env.VITE_TEMPLATE_ID;
 
 export const Contact = () => {
   const form = useRef();
