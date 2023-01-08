@@ -7,7 +7,7 @@ export const Projects = () => {
   });
 
   return (
-    <div className="max-w-full px-[8%] h-[100vh]">
+    <div className="containers h-[100vh]">
       <h2 className="text-2xl py-5 uppercase text-gray-500 text-center border:b-gray-500">
         projects
       </h2>

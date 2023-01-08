@@ -102,7 +102,7 @@ export const Contact = () => {
           name="name"
           onChange={(e) => setName(e.target.value)}
           placeholder="Full Name"
-          className="form-sm lg:form"
+          className="form"
           required
         />
         {!validEmail ? (
@@ -112,7 +112,7 @@ export const Contact = () => {
               name="email"
               placeholder="name@example.com"
               onChange={handleMail}
-              className="form-sm lg:form"
+              className="form"
               required
             />{" "}
             {typing && (
@@ -128,7 +128,7 @@ export const Contact = () => {
               name="email"
               placeholder="name@example.com"
               onChange={handleMail}
-              className="form-sm lg:form"
+              className="form"
               required
             />
             {typing && validEmail && (
@@ -143,7 +143,7 @@ export const Contact = () => {
           name="subject"
           placeholder="Subject"
           onChange={(e) => setSubject(e.target.value)}
-          className="form-sm lg:form"
+          className="form"
           required
         />
         <textarea
@@ -151,7 +151,7 @@ export const Contact = () => {
           rows="9"
           placeholder="Your message (at least 30 characters)."
           onChange={(e) => setMessage(e.target.value)}
-          className="form-sm lg:form"
+          className="form"
           required
         />
         {/* SUBMIT BUTTON */}
@@ -166,7 +166,7 @@ export const Contact = () => {
             className={`${
               canSend
                 ? "text-blue-300 hover:bg-blue-300 hover:text-black flex items-center justify-around uppercase rounded-md py-3 border border-blue-300 w-[100px] text-[11px] md:text-sm"
-                : "text-gray-400 text-center flex items-center justify-around uppercase rounded-md py-3 border border-gray-400 w-[100px] text-[11px] md:text-sm"
+                : "text-gray-400 text-center flex items-center justify-around uppercase rounded-md py-3 border border-gray-400 w-[100px] text-[11px] md:text-sm cursor-p"
             }`}
           >
             <p>send</p>

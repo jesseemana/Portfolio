@@ -12,7 +12,7 @@ export const Home = () => {
 
   return (
     <>
-      <main className="snap-y snap-y-mandatory scroll-smooth max-w-full px-[8%] overflow-hidden">
+      <main className="snap-y-mandatory scroll-smooth containers overflow-hidden">
         <section id="hero" className="scroll-smooth py-5 snap-start transition">
           <Hero />
         </section>

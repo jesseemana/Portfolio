@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const Skills = ({ directionLeft }) => {
   return (
-    <div className="py-5 z-[-1] container-sm lg:container-lg">
+    <div className="py-5 z-[-1] containers">
       <h2 className="h2 text-center">skills</h2>
       <p className="text-gray-400 text-lg text-center ">
         Here is my tech stack consisting of the tools I use and getting familiar
