@@ -5,9 +5,12 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY;
-const SERVICE_KEY = import.meta.env.VITE_SERVICE_KEY || process.env.VITE_SERIVCE_KEY;
-const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID || process.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY =
+  import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY;
+const SERVICE_KEY =
+  import.meta.env.VITE_SERVICE_KEY || process.env.VITE_SERIVCE_KEY;
+const TEMPLATE_ID =
+  import.meta.env.VITE_TEMPLATE_ID || process.env.VITE_TEMPLATE_ID;
 
 export const Contact = () => {
   const form = useRef();
@@ -166,7 +169,7 @@ export const Contact = () => {
             className={`${
               canSend
                 ? "text-blue-300 hover:bg-blue-300 hover:text-black flex items-center justify-around uppercase rounded-md py-3 border border-blue-300 w-[100px] text-[11px] md:text-sm"
-                : "text-gray-400 text-center flex items-center justify-around uppercase rounded-md py-3 border border-gray-400 w-[100px] text-[11px] md:text-sm cursor-p"
+                : "text-gray-400 text-center flex items-center justify-around uppercase rounded-md py-3 border border-gray-400 w-[100px] text-[11px] md:text-sm cursor-not-allowed"
             }`}
           >
             <p>send</p>
