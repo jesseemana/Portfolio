@@ -24,7 +24,7 @@ export const Services = () => {
               <img
                 src={item.icon}
                 alt="icon"
-                className="mx-auto text-[#ccd6f6] font-bold py-2 h-[70px]"
+                className="mx-auto font-bold py-2 h-[70px]"
               />
               <h2 className="text-center capitalize text-lg text-[#ccd6f6] py-2">
                 {item.title}
