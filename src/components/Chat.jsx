@@ -4,8 +4,22 @@ import SpeedDialAction from "@mui/material/SpeedDialAction";
 import { BsTelegram, BsWhatsapp, BsChat } from "react-icons/bs";
 
 const actions = [
-  { icon: <BsTelegram href="" className="text-[20px]" />, name: "Telegram" },
-  { icon: <BsWhatsapp className="text-[20px]" />, name: "Whatsapp" },
+  {
+    icon: (
+      <a href="https://tm.me/+265981728175" target="_blank">
+        <BsTelegram className="text-[20px]" />
+      </a>
+    ),
+    name: "Telegram",
+  },
+  {
+    icon: (
+      <a href="https://wa.me/+265981728175" target="_blank">
+        <BsWhatsapp className="text-[20px]" />
+      </a>
+    ),
+    name: "Whatsapp",
+  },
 ];
 
 export const Chat = () => {
