@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const About = () => {
   return (
     <div className="py-5">
-      <h2 className="h2 after:content-[''] after:bg-[#8892b0] after:h-[1px] after:w-[150px] after:relative after:inline-block after:align-middle after:translate-x-3">
+      <h2 className="about">
         about me
       </h2>
       <div className="grid grid-row-2 grid-row-reverse lg:grid-cols-2 gap-y-7 py-4">

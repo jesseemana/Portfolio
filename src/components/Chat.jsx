@@ -24,7 +24,6 @@ const actions = [
 
 export const Chat = () => {
   return (
-    <div className="containers">
       <Box sx={{ height: 0, flexGrow: 1 }}>
         <SpeedDial
           ariaLabel="other chat options"
@@ -40,6 +39,5 @@ export const Chat = () => {
           ))}
         </SpeedDial>
       </Box>
-    </div>
   );
 };

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { data } from "../data";
+import { motion } from "framer-motion";
 
 export const Services = () => {
   return (
@@ -19,7 +19,7 @@ export const Services = () => {
           return (
             <div
               key={index}
-              className="group justify-center hover-transition mx-auto border border-gray-400 rounded-md w-[250px] lg:w-[300px] h-[300px] md:h-[400px] lg:h-[370px] py-5 px-4 flex flex-col hover:bg-blue-500 hover:border-blue-500"
+              className="services group"
             >
               <img
                 src={item.icon}

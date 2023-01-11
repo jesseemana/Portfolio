@@ -1,6 +1,6 @@
 import { logos } from "../logos";
-import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import Tippy from "@tippyjs/react";
 import { motion } from "framer-motion";
 
 export const Skills = ({ directionLeft }) => {
@@ -24,9 +24,9 @@ export const Skills = ({ directionLeft }) => {
                 <img
                   src={skill.icon}
                   alt={`${skill.name} logo`}
-                  className="border z-[-1] border-gray-500 trasnsition duration-300 ease-in-out object-cover rounded-full w-24 h-24 md:w-24 md:h-24 lg:w-24 lg:h-24"
+                  className="images"
                 />
-                <div className="cursor-pointer absolute rounded-full z-0 opacity-0 hover:opacity-80 transition duration-300 hover:bg-white w-24 h-24 md:w-24 md:h-24 lg:w-24 lg:h-24">
+                <div className="levels">
                   <div className="flex items-center justify-center h-full">
                     <p className="font-bold text-sm opacity-100 ">
                       {skill.level}

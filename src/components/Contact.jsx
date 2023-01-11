@@ -159,7 +159,7 @@ export const Contact = () => {
         />
         {/* SUBMIT BUTTON */}
         {loading ? (
-          <button className="group button">
+          <button className="group button-form">
             <ImSpinner7 className="animate-spin text-[20px] text-blue-300 group-hover:text-black " />
           </button>
         ) : (

@@ -20,7 +20,7 @@ export const Hero = () => {
           {text}{" "}
         </h3>
         <div className="mt-[60px] md:mt-[100px]">
-          <button className="text-md text-blue-300 hover:bg-blue-300 hover:text-black border border-blue-300 uppercase rounded-full px-3 py-2 mb-5">
+          <button className="button-contact">
             <a href="#contact"> get in touch</a>
           </button>
           {/* SOCIAL ICONS */}
