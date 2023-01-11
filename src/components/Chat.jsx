@@ -14,7 +14,7 @@ const actions = [
   },
   {
     icon: (
-      <a href="https://wa.me/+265981728175" target="_blank">
+      <a href="https://wa.me/+265881815626" target="_blank">
         <BsWhatsapp className="text-[20px]" />
       </a>
     ),
