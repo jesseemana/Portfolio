@@ -1,11 +1,11 @@
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
-import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
 import { BsTelegram, BsWhatsapp, BsChat } from "react-icons/bs";
 
 const actions = [
-  { icon: <BsTelegram />, name: "Telegram" },
-  { icon: <BsWhatsapp />, name: "Whatsapp" },
+  { icon: <BsTelegram href="" className="text-[20px]" />, name: "Telegram" },
+  { icon: <BsWhatsapp className="text-[20px]" />, name: "Whatsapp" },
 ];
 
 export const Chat = () => {
@@ -13,11 +13,18 @@ export const Chat = () => {
     <div className="containers">
       <Box sx={{ height: 0, flexGrow: 1 }}>
         <SpeedDial
-          ariaLabel="SpeedDial basic example"
-          className="fixed b-20 r-90"
-          sx={{ position: "fixed", bottom: 20, right: 30 }}
+          ariaLabel="other chat options"
+          sx={{ position: "fixed", bottom: 20, right: 20 }}
           icon={<BsChat className="text-[30px]" />}
-        ></SpeedDial>
+        >
+          {actions.map((action) => (
+            <SpeedDialAction
+              key={action.name}
+              icon={action.icon}
+              tooltipTitle={action.name}
+            />
+          ))}
+        </SpeedDial>
       </Box>
     </div>
   );
