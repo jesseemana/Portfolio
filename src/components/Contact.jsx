@@ -1,9 +1,9 @@
+import emailjs from "@emailjs/browser";
+import { ImSpinner7 } from "react-icons/im";
 import { useState, useRef, useEffect } from "react";
 import { BiSend, BiError, BiCheck } from "react-icons/bi";
-import { ImSpinner7 } from "react-icons/im";
-import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const PUBLIC_KEY =
   import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY;
@@ -109,7 +109,7 @@ export const Contact = () => {
           required
         />
         {!validEmail ? (
-          <div>
+          <>
             <input
               type="text"
               name="email"
@@ -123,9 +123,9 @@ export const Contact = () => {
                 <BiError className="text-2xl text-red-500" />
               </span>
             )}
-          </div>
+          </>
         ) : (
-          <div>
+          <>
             <input
               type="text"
               name="email"
@@ -139,7 +139,7 @@ export const Contact = () => {
                 <BiCheck className="text-2xl text-green-400" />
               </span>
             )}
-          </div>
+          </>
         )}
         <input
           type="text"
@@ -174,7 +174,7 @@ export const Contact = () => {
           >
             <p>send</p>
             <span>
-              <BiSend className={`${canSend ? "block" : "hidden"} `} />
+              <BiSend />
             </span>
           </button>
         )}
