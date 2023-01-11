@@ -159,18 +159,14 @@ export const Contact = () => {
         />
         {/* SUBMIT BUTTON */}
         {loading ? (
-          <button className="group hover:bg-blue-300 flex justify-center uppercase rounded-md py-3 border border-blue-300 w-[100px] text-[11px] md:text-sm">
+          <button className="group button">
             <ImSpinner7 className="animate-spin text-[20px] text-blue-300 group-hover:text-black " />
           </button>
         ) : (
           <button
             type="submit"
             disabled={!canSend}
-            className={`${
-              canSend
-                ? "text-blue-300 hover:bg-blue-300 hover:text-black flex items-center justify-around uppercase rounded-md py-3 border border-blue-300 w-[100px] text-[11px] md:text-sm"
-                : "text-gray-400 text-center flex items-center justify-around uppercase rounded-md py-3 border border-gray-400 w-[100px] text-[11px] md:text-sm cursor-not-allowed"
-            }`}
+            className={`${canSend ? "cansend" : "cantsend"}`}
           >
             <p>send</p>
             <span>

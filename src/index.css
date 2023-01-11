@@ -11,6 +11,18 @@
         @apply max-w-full px-[8%]
     }
 
+    .cansend {
+        @apply text-blue-300 hover:bg-blue-300 hover:text-black flex items-center justify-around uppercase rounded-md py-3 border border-blue-300 w-[100px] text-[11px] md:text-sm
+    }
+
+    .cantsend {
+        @apply text-gray-400 text-center flex items-center justify-around uppercase rounded-md py-3 border border-gray-400 w-[100px] text-[11px] md:text-sm cursor-not-allowed
+    }
+
+    .button {
+        @apply hover:bg-blue-300 flex justify-center uppercase rounded-md py-3 border border-blue-300 w-[100px] text-[11px] md:text-sm
+    }
+
     .icons {
         @apply hover:text-blue-300 text-lg lg:text-xl
     }
