@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
-      <Chat />
+      {/* <Chat /> */}
       <Footer />
     </div>
   );
