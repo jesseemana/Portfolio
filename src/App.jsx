@@ -1,11 +1,11 @@
 import "./index.css";
 import { Home } from "./pages/Home";
+import { Chat } from "./components/Chat";
 import { NoMatch } from "./pages/NoMatch";
 import { Projects } from "./pages/Projects";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
-import { Chat } from "./components/Chat";
 
 const App = () => {
   return (
