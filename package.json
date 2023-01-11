@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.4",
     "@tippyjs/react": "^4.2.6",
     "aos": "^2.3.4",
     "dotenv": "^16.0.3",

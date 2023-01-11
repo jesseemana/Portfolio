@@ -14,7 +14,7 @@ export const Skills = ({ directionLeft }) => {
       <motion.div
         initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
         transition={{ duration: 1, delay: 0 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
         className="grid grid-cols-3 gap-y-3 gap-x-2 py-10"
       >
         {logos.map((skill, index) => {
