@@ -6,7 +6,7 @@ import { BsTelegram, BsWhatsapp, BsChat } from "react-icons/bs";
 const actions = [
   {
     icon: (
-      <a href="https://tm.me/+265981728175" target="_blank">
+      <a href="https://telegram.me/+265981728175" target="_blank">
         <BsTelegram className="text-[20px]" />
       </a>
     ),
